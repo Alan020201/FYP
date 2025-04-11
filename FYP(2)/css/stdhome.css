@@ -1,0 +1,297 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background-color: rgb(255, 166, 0);
+  padding: 30px;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-input,
+.search-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+/* Distance Slider Label & Layout */
+.distance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* The actual range input */
+.search-slider {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #ffffff;  /* visible white track */
+  border-radius: 5px;
+  outline: none;
+  margin-top: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Webkit Slider Thumb */
+.search-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 10px solid rgb(255, 133, 0);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Firefox Slider Thumb */
+.search-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 3px solid rgb(255, 133, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-slider:hover {
+  background: #ccc;
+}
+
+.search-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: rgb(255, 166, 0);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-slider::-webkit-slider-thumb:hover {
+  background: rgb(255, 133, 0);
+}
+
+.search-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: rgb(255, 166, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-slider::-moz-range-thumb:hover {
+  background: rgb(255, 133, 0);
+}
+
+/* Arrows */
+.arrow {
+  background-color: rgb(255, 166, 0);
+  border: none;
+  font-size: 24px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgb(255, 133, 71);
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+/* Tutor Section */
+.tutor-sections {
+  padding: 20px;
+}
+
+.tutor-category {
+  margin-bottom: 40px;
+}
+
+.tutor-category h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tutor-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tutor-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.tutor-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tutor-card h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tutor-card button {
+  background-color: rgb(255, 166, 0);
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.tutor-card button:hover {
+  background-color: rgb(255, 133, 71);
+}
+
+/* Sliding Button */
+.slide-button {
+  background-color: rgb(255, 166, 0);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slide-button:hover {
+  background-color: rgb(255, 133, 71);
+}
+
+/* Profile Icon */
+.profile-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.profile-icon:hover {
+  color: rgb(255, 133, 71);
+}
+
+/* See All Button */
+.see-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.see-all-button {
+  background-color: rgb(255, 166, 0);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.see-all-button:hover {
+  background-color: rgb(255, 133, 71);
+}
+
+/* Optional Profile Avatar (If used in header/nav) */
+.nav-profile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-avatar {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+
+.nav-avatar:hover {
+  transform: scale(1.05);
+}
+.view-profile {
+  display: inline-block;
+  background-color: rgb(255, 166, 0);
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.view-profile:hover {
+  background-color: rgb(255, 133, 71);
+}

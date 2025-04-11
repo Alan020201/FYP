@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PadhneYaar | Pay with Khalti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/payment-page.css" />
+  <script defer src="../js/payment-page.js"></script>
+  <script src="https://khalti.com/static/khalti-checkout.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Logo (Top Left) -->
+  <div class="fixed-logo" onclick="window.location.href='stdhome.html'">
+    <img src="../images/logo2.png" alt="PadhneYaar Logo">
+  </div>
+
+  <!-- Payment Form -->
+  <div class="payment-container">
+    <h2>Pay with Khalti</h2>
+
+    <form id="khaltiForm">
+      <label for="payerName">Your Name</label>
+      <input type="text" id="payerName" placeholder="Enter your name" required />
+
+      <label for="paymentAmount">Amount (NPR)</label>
+      <input type="text" id="paymentAmount" value="999" required readonly />
+
+      <!-- Khalti Payment Button -->
+      <button type="button" id="khalti-button" class="khalti-btn">
+        <img src="https://seeklogo.com/images/K/khalti-logo-FA397E098B-seeklogo.com.png" alt="Khalti Logo" />
+        Pay with Khalti
+      </button>
+    </form>
+
+    <div class="success-message" id="successMessage" style="display: none;">
+      <i class="fas fa-check-circle"></i>
+      Payment initiated. Check your Khalti app.
+    </div>
+  </div>
+
+</body>
+</html>

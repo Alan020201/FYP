@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Chat | PadhneYaar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/student-chat.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script defer src="../js/student-chat.js"></script>
+</head>
+<body>
+
+  <!-- Navbar (copied from student-profile.html) -->
+  <nav class="top-navbar">
+    <div class="nav-left">
+      <a href="stdhome.html" title="Back to Home">
+        <img src="../images/logo2.png" alt="PadhneYaar Logo" class="nav-logo">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li onclick="window.location.href='student-profile.html'"><i class="fas fa-user"></i> Profile</li>
+      <li class="active"><i class="fas fa-comments"></i> Chats</li>
+      <li onclick="window.location.href='student-timetable.html'"><i class="fas fa-calendar-alt"></i> Time Table</li>
+      <li onclick="window.location.href='student-kyc.html'"><i class="fas fa-id-card"></i> KYC Verification</li>
+      <li onclick="window.location.href='student-payment.html'"><i class="fas fa-wallet"></i> Payment</li>
+      <li onclick="window.location.href='student-help.html'"><i class="fas fa-question-circle"></i> Help</li>
+    </ul>
+
+    <div class="nav-profile">
+      <img src="../images/default-profile.png" alt="User" class="nav-avatar" onclick="window.location.href='student-profile.html'">
+    </div>
+  </nav>
+
+  <!-- Chat Layout -->
+  <div class="chat-wrapper">
+    <!-- Sidebar with DMs -->
+    <aside class="chat-sidebar">
+      <h3>Direct Messages</h3>
+      <ul class="dm-list">
+        <li class="dm-item active">
+          <img src="../images/teacher1.png" alt="Tutor Emily" class="dm-avatar" />
+          <span>Tutor Emily</span>
+          <span class="msg-badge">2</span>
+        </li>
+        <li class="dm-item">
+          <img src="../images/teacher2.png" alt="Tutor John" class="dm-avatar" />
+          <span>Tutor John</span>
+          <span class="msg-badge">1</span>
+        </li>
+        <li class="dm-item">
+          <img src="../images/teacher3.png" alt="Tutor Smith" class="dm-avatar" />
+          <span>Tutor Smith</span>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Chat Area -->
+    <main class="chat-container">
+      <div class="chat-header">
+        <h2>Tutor Emily</h2>
+      </div>
+
+      <div class="chat-box" id="chatBox">
+        <!-- Chat messages -->
+      </div>
+
+      <form class="chat-form" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Type a message..." required />
+        <input type="file" id="fileInput" hidden />
+        <label for="fileInput" class="file-icon" title="Attach File">📎</label>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

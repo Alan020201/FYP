@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile | PadhneYaar</title>
+  <link rel="stylesheet" href="../css/student-profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="top-navbar">
+    <div class="nav-left">
+        <a href="stdhome.html" title="Back to Home">
+          <img src="../images/logo2.png" alt="PadhneYaar Logo" class="nav-logo">
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="student-profile.html" class="active"><i class="fas fa-user"></i> Profile</a></li>
+
+        <li><a href="student-chat.html"><i class="fas fa-comments"></i> Chats</a></li>
+        <li><a href="student-timetable.html"><i class="fas fa-calendar-alt"></i> Time Table</a></li>
+        <li><a href="student-kyc.html"><i class="fas fa-id-card"></i> KYC Verification</a></li>
+        <li><a href="student-payment.html"><i class="fas fa-wallet"></i> Payment</a></li>
+        <li><a href="student-help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+      </ul>
+      
+      
+
+    <div class="nav-profile">
+      <img src="../images/default-profile.png" alt="User" class="nav-avatar">
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="profile-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        
+        <h2 class="sidebar-title">My Profile</h2>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="active"><a href="student-profile.html"><i class="fas fa-user"></i> Basic Information</a></li>
+        <li><a href="student-password.html"><i class="fas fa-lock"></i> Password</a></li>
+        <li><a href="student-coupons.html"><i class="fas fa-gift"></i> Redeemed Coupons</a></li>
+        <li><a href="student-preferences.html"><i class="fas fa-cog"></i> Preferences</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <main class="profile-content">
+      <h2>Basic Information</h2>
+
+      <form class="profile-form">
+        <div class="form-left">
+          <label>Full Name</label>
+          <input type="text" value="Alan Shah">
+
+          <label>Nick Name</label>
+          <input type="text" value="Walker">
+
+          <label>Email Address</label>
+          <input type="email" value="alan@padhneyaar.com" disabled>
+
+          <label>Phone Number</label>
+          <input type="text" value="9745612188">
+
+          <label>School</label>
+          <input type="text" value="Herald College Kathmandu">
+
+          <label>Location</label>
+          <input type="text" value="Kathmandu">
+
+          <button class="save-btn">Save Changes</button>
+        </div>
+
+        <div class="form-right">
+          <div class="profile-pic-container">
+            <img src="../images/default-profile.png" alt="Profile Picture" id="profileImagePreview">
+            <label class="upload-btn" id="uploadBtn" for="profile-upload">Change</label>
+            <input type="file" id="profile-upload" hidden>
+          </div>
+          <p class="upload-note">Max Image Size = 1 MB</p>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="../js/student-profile.js"></script>
+  <script src="../js/navbar-highlight.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.full-width {
+    width: 100%;
+  }
+  
+  select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  

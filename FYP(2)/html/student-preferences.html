@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preferences | PadhneYaar</title>
+  <link rel="stylesheet" href="../css/student-profile.css">
+  <link rel="stylesheet" href="../css/student-preferences.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="top-navbar">
+    <div class="nav-left">
+      <a href="stdhome.html" title="Back to Home">
+        <img src="../images/logo2.png" alt="PadhneYaar Logo" class="nav-logo">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="student-profile.html" class="active"><i class="fas fa-user"></i> Profile</a></li>
+
+     <li><a href="student-chat.html"><i class="fas fa-comments"></i> Chats</a></li>
+      <li><i class="fas fa-calendar-alt"></i> Time Table</li>
+      <li><i class="fas fa-id-card"></i> KYC Verification</li>
+      <li><i class="fas fa-wallet"></i> Payment</li>
+      <li><i class="fas fa-question-circle"></i> Help</li>
+    </ul>
+
+    <div class="nav-profile">
+      <img src="../images/default-profile.png" alt="User" class="nav-avatar">
+    </div>
+  </nav>
+
+  <div class="profile-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <h2 class="sidebar-title">My Profile</h2>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="student-profile.html"><i class="fas fa-user"></i> Basic Information</a></li>
+        <li><a href="student-password.html"><i class="fas fa-lock"></i> Password</a></li>
+        <li><a href="student-coupons.html"><i class="fas fa-gift"></i> Redeemed Coupons</a></li>
+        <li class="active"><a href="student-preferences.html"><i class="fas fa-cog"></i> Preferences</a></li>
+      </ul>
+    </aside>
+
+    <main class="profile-content">
+      <h2>Preferences</h2>
+
+      <form class="profile-form">
+        <div class="form-left full-width">
+          <label for="language">Preferred Language</label>
+          <select id="language">
+            <option>English</option>
+            <option>Nepali</option>
+          </select>
+
+          <label for="notifications">Notification Preferences</label>
+          <select id="notifications">
+            <option>Email Only</option>
+            <option>SMS Only</option>
+            <option>Email & SMS</option>
+          </select>
+
+          <button class="save-btn">Save Preferences</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="../js/student-preferences.js"></script>
+  <script src="../js/navbar-highlight.js"></script>
+</body>
+</html>

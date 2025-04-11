@@ -1,0 +1,63 @@
+.coupons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .coupon-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  
+  .coupon-card p {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+  }
+  .redeem-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .redeem-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .redeem-btn {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .redeem-btn:hover {
+    background-color: rgb(255, 133, 0);
+  }
+  
+  .coupon-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+  }
+  
+  .coupon-card p {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+  }
+  

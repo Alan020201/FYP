@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PadhneYaar Tutor Page</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/tutorpage.css">
+    <!-- Boxicons CDN Setup for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="fixed-logo" onclick="window.location.href='stdhome.html'">
+        <img src="../images/logo2.png" alt="PadhneYaar Logo">
+      </div>
+      
+  
+    <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-6">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="img/tutor-profile.png" alt="Tutor Profile" id="product-main-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="breadcrumb">
+                        <span><a href="#">Home</a></span>
+                        <span><a href="#">Tutors</a></span>
+                        <span class="active">Tutor Name</span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-title">
+                            <h2>John Doe - Expert Math Tutor</h2>
+                        </div>
+                        <div class="product-rating">
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span class="review">(47 Reviews)</span>
+                        </div>
+                        <div class="product-price" id="product-price" data-price="999">
+                            <span class="offer-price">NPR 999.00</span>
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Description</h3>
+                            <p>John is a highly experienced math tutor with over 10 years of experience. He specializes in Algebra, Geometry, and Calculus. Learn at your own pace with flexible timings and personalized lessons.</p>
+                        </div>
+
+                        <!-- Days and Time Section -->
+                        <div class="product-availability">
+                            <h4>Available Days & Time</h4>
+                            <div class="availability-layout">
+                                <div>
+                                    <h5>Monday</h5>
+                                    <span>9:00 AM - 11:00 AM</span>
+                                </div>
+                                <div>
+                                    <h5>Wednesday</h5>
+                                    <span>3:00 PM - 5:00 PM</span>
+                                </div>
+                                <div>
+                                    <h5>Friday</h5>
+                                    <span>6:00 PM - 8:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Session Type -->
+                        <div class="product-session-type">
+                            <h4>Session Type</h4>
+                            <span id="session-type">Online</span> <!-- Default session type is Online -->
+                        </div>
+
+                        <!-- Hidden Tutor Phone and Location -->
+                        <div class="product-phone hidden" id="tutor-phone">
+                            <h4>Phone Number</h4>
+                            <span>+91 1234567890</span>
+                        </div>
+
+                        <div class="product-location hidden" id="tutor-location">
+                            <h4>Location</h4>
+                            <span>Mumbai, Maharashtra</span>
+                        </div>
+
+                        <span class="divider"></span>
+
+                        <!-- Re-ordered Buttons: Book Session first -->
+                        <div class="product-btn-group">
+                            <!-- Book Session Button (Redirect to Payment Page) -->
+                            <div class="button book-session" onclick="redirectToPaymentPage()">Book Session</div>
+                            <!-- Send Offer Button -->
+                            <div class="button send-offer" onclick="openOfferPopup()">Send Offer</div>
+                            <!-- Add to Wishlist Button -->
+                            <div class="button heart"><i class='bx bxs-heart'></i> Add to Wishlist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Tutors Section -->
+    <div class="related-tutors">
+        <h3>Related Tutors</h3>
+        <div class="related-tutors-list">
+            <div class="related-tutor-card">
+                <img src="img/tutor-profile.png" alt="Tutor Profile" class="tutor-profile-img">
+                <div class="tutor-info">
+                    <h4>Jane Smith</h4>
+                    <p>Expert Physics Tutor</p>
+                    <span class="price">NPR 850.00</span>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <div class="related-tutor-card">
+                <img src="img/tutor-profile.png" alt="Tutor Profile" class="tutor-profile-img">
+                <div class="tutor-info">
+                    <h4>David Lee</h4>
+                    <p>Expert Chemistry Tutor</p>
+                    <span class="price">NPR 950.00</span>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <div class="related-tutor-card">
+                <img src="img/tutor-profile.png" alt="Tutor Profile" class="tutor-profile-img">
+                <div class="tutor-info">
+                    <h4>Sarah Brown</h4>
+                    <p>Expert English Tutor</p>
+                    <span class="price">NPR 780.00</span>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer Popup -->
+    <div id="offer-popup" class="popup">
+        <div class="popup-content">
+            <h3>Send Offer to Tutor</h3>
+            <p>Enter your offer amount in NPR:</p>
+            <input type="number" id="offer-amount" placeholder="Enter your offer amount in NPR">
+            <div class="popup-btn-group">
+                <button onclick="submitOffer()">Submit Offer</button>
+                <button onclick="closeOfferPopup()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../js/tutorpage.js"></script>
+</body>
+</html>

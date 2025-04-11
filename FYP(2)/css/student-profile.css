@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 12px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li {
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links li:hover {
+  color: rgb(255, 166, 0);
+}
+
+.nav-links a.active {
+    color: rgb(255, 166, 0);
+    font-weight: 600;
+  }
+  
+
+.nav-profile img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+}
+
+/* Profile Layout */
+.profile-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: white;
+  padding: 30px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sidebar-logo-img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.sidebar-menu li {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+/* Fixed anchor styles inside sidebar items */
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #444;
+  text-decoration: none;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: rgba(255, 166, 0, 0.12);
+  color: rgb(255, 133, 0);
+}
+
+.sidebar-menu li.active a {
+  background-color: rgba(255, 166, 0, 0.15);
+  color: rgb(255, 133, 0);
+  font-weight: 500;
+}
+
+.sidebar-menu li a:visited {
+  color: inherit;
+}
+
+/* Main content */
+.profile-content {
+  flex: 1;
+  padding: 40px;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+
+.profile-content h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.profile-form {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-left {
+  width: 60%;
+}
+
+.form-left label {
+  font-size: 14px;
+  color: #333;
+  margin-top: 15px;
+  display: block;
+}
+
+.form-left input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.form-left input:disabled {
+  background: #f3f3f3;
+  color: #888;
+}
+
+.save-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: rgb(255, 166, 0);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.save-btn:hover {
+  background: rgb(255, 133, 0);
+}
+
+/* Profile Image Upload */
+.form-right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic-container {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+}
+
+.upload-btn {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  background: rgb(255, 166, 0);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+  border: none;
+}
+
+.upload-btn:hover {
+  background: rgb(255, 133, 0);
+}
+
+.upload-note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+/* Fix for nav links to remove underline and blue color */
+.nav-links li a {
+    text-decoration: none;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: rgb(255, 166, 0);
+  }
+  
+  .nav-links li a.active {
+    color: rgb(255, 166, 0);
+    font-weight: 600;
+  }
+  

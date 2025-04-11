@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PadhneYaar - Find the Perfect Tutor for You</title>
+  <link rel="stylesheet" href="../css/stdhome.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <img src="logo.png" alt="PadhneYaar Logo" class="logo">
+      <h1>PadhneYaar</h1>
+    </div>
+   
+<!-- Profile Avatar -->
+<div class="nav-profile" onclick="window.location.href='student-profile.html'" title="Go to Profile">
+  <img src="../images/default-profile.png" alt="Profile" class="nav-avatar">
+</div>
+
+  <!-- Include Font Awesome for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <div class="header-text">
+      <h2>Find the Perfect Tutor for You</h2>
+      <form class="search-form">
+        <input type="text" placeholder="Try 'Math'" class="search-input">
+        <input type="text" placeholder="Location" class="search-input">
+        <select class="search-select">
+          <option>Level</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+        <select class="search-select">
+          <option>Rating</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <select class="search-select">
+          <option>Mode</option>
+          <option>Online</option>
+          <option>Offline</option>
+        </select>
+        <!-- Distance Slider -->
+        <div class="distance-container">
+          <label for="distance">Distance: <span id="distanceValue">1</span> km</label>
+          <input type="range" id="distance" name="distance" min="1" max="10" value="1" class="search-slider" oninput="updateDistanceValue(this.value)">
+        </div>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      
+    </div>
+    
+  </header>
+  <!-- Tutor Sections -->
+  <section class="tutor-sections">
+    <!-- Top Rated Tutors -->
+    <div class="tutor-category">
+      <h3>Top Rated Tutors</h3>
+      <div class="tutor-cards">
+        <div class="tutor-card">
+          <img src="teacher1.jpg" alt="Tutor 1">
+          <h4>John Doe</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 5 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher2.jpg" alt="Tutor 2">
+          <h4>Jane Smith</h4>
+          <p>Subject: Science</p>
+          <p>Experience: 4 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher3.jpg" alt="Tutor 3">
+          <h4>Emily Brown</h4>
+          <p>Subject: English</p>
+          <p>Experience: 3 years</p>
+          <p>Mode: Offline</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher4.jpg" alt="Tutor 4">
+          <h4>Michael Clark</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 6 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+            <img src="teacher4.jpg" alt="Tutor 4">
+            <h4>Michael Clark</h4>
+            <p>Subject: Math</p>
+            <p>Experience: 6 years</p>
+            <p>Mode: Online</p>
+            <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- Maths Tutors -->
+    <div class="tutor-category">
+      <h3>Math Tutors</h3>
+      <div class="tutor-cards">
+        <div class="tutor-card">
+          <img src="teacher1.jpg" alt="Tutor 1">
+          <h4>John Doe</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 5 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher2.jpg" alt="Tutor 2">
+          <h4>Jane Smith</h4>
+          <p>Subject: Science</p>
+          <p>Experience: 4 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher3.jpg" alt="Tutor 3">
+          <h4>Emily Brown</h4>
+          <p>Subject: English</p>
+          <p>Experience: 3 years</p>
+          <p>Mode: Offline</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher4.jpg" alt="Tutor 4">
+          <h4>Michael Clark</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 6 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+            <img src="teacher4.jpg" alt="Tutor 4">
+            <h4>Michael Clark</h4>
+            <p>Subject: Math</p>
+            <p>Experience: 6 years</p>
+            <p>Mode: Online</p>
+            <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+          </div>
+      </div>
+    </div>
+    
+
+    <!-- Science Tutors -->
+    <div class="tutor-category">
+      <h3>Science Tutors</h3>
+      <div class="tutor-cards">
+        <div class="tutor-card">
+          <img src="teacher1.jpg" alt="Tutor 1">
+          <h4>John Doe</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 5 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher2.jpg" alt="Tutor 2">
+          <h4>Jane Smith</h4>
+          <p>Subject: Science</p>
+          <p>Experience: 4 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher3.jpg" alt="Tutor 3">
+          <h4>Emily Brown</h4>
+          <p>Subject: English</p>
+          <p>Experience: 3 years</p>
+          <p>Mode: Offline</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher4.jpg" alt="Tutor 4">
+          <h4>Michael Clark</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 6 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+            <img src="teacher4.jpg" alt="Tutor 4">
+            <h4>Michael Clark</h4>
+            <p>Subject: Math</p>
+            <p>Experience: 6 years</p>
+            <p>Mode: Online</p>
+            <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- English Tutors -->
+    <div class="tutor-category">
+      <h3>English Tutors</h3>
+      <div class="tutor-cards">
+        <div class="tutor-card">
+          <img src="teacher1.jpg" alt="Tutor 1">
+          <h4>John Doe</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 5 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher2.jpg" alt="Tutor 2">
+          <h4>Jane Smith</h4>
+          <p>Subject: Science</p>
+          <p>Experience: 4 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher3.jpg" alt="Tutor 3">
+          <h4>Emily Brown</h4>
+          <p>Subject: English</p>
+          <p>Experience: 3 years</p>
+          <p>Mode: Offline</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+          <img src="teacher4.jpg" alt="Tutor 4">
+          <h4>Michael Clark</h4>
+          <p>Subject: Math</p>
+          <p>Experience: 6 years</p>
+          <p>Mode: Online</p>
+          <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+        </div>
+        <div class="tutor-card">
+            <img src="teacher4.jpg" alt="Tutor 4">
+            <h4>Michael Clark</h4>
+            <p>Subject: Math</p>
+            <p>Experience: 6 years</p>
+            <p>Mode: Online</p>
+            <a href="tutorpage.html" class="view-profile">View Profile</a>
+
+          </div>
+      </div>
+    </div>
+    
+    <!-- See All Tutors Button -->
+    <div class="see-all">
+      <button class="see-all-button">See All Tutors</button>
+    </div>
+  </section>
+
+  <script src="../js/stdhome.js"></script>
+</body>
+</html>
